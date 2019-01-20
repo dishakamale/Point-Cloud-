@@ -13,24 +13,24 @@ from mpl_toolkits.mplot3d import axes3d, Axes3D #<-- Note the capitalization!
 import pandas as pd
 
 
-p = pcl.load("./Dataset/table_scene_mug_stereo_textured.pcd")
+p = pcl.load("./dataset/table_scene_mug_stereo_textured.pcd")
 
 fil = p.make_statistical_outlier_filter()
 fil.set_mean_k(50)
 fil.set_std_dev_mul_thresh(1.0)
 
-pcl.save(fil.filter(), "./Dataset/table_scene_mug_stereo_textured_inliers.pcd")
+pcl.save(fil.filter(), "./dataset/table_scene_mug_stereo_textured_inliers.pcd")
 
 fil.set_negative(True)
-pcl.save(fil.filter(), "./Dataset/table_scene_mug_stereo_textured_outliers.pcd")
+pcl.save(fil.filter(), "./dataset/table_scene_mug_stereo_textured_outliers.pcd")
 
 
 if __name__ == "__main__":
-	pcd = read_point_cloud("./Dataset/table_scene_mug_stereo_textured_inliers.pcd")
+	pcd = read_point_cloud("./dataset/table_scene_mug_stereo_textured_inliers.pcd")
 	draw_geometries([pcd])
 	print(pcd)
 
-data = read_point_cloud("./Dataset/table_scene_mug_stereo_textured_inliers.pcd")
+data = read_point_cloud("./dataset/table_scene_mug_stereo_textured_inliers.pcd")
 
 a = np.asarray(data.points)
 fig = plt.figure()
