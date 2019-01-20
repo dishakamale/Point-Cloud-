@@ -10,7 +10,7 @@ import pptk
 
 
 
-data = read_point_cloud("/home/dishuu/Desktop/Point Cloud/python-clustering-exercises-master/table_scene_lms400.pcd")
+data = read_point_cloud("./dataset/table_scene_lms400.pcd")
 
 a = np.asarray(data.points)
 fig = plt.figure()
@@ -54,7 +54,7 @@ axc_1.scatter(c_1[:,0],c_1[:,1],c_1[:,2],c='yellow', alpha=0.33333)
 fig2 = plt.figure()
 axc_2 = Axes3D(fig2)
 axc_2.scatter(c_2[:,0],c_2[:,1],c_2[:,2],c='red', alpha=0.33333)
-fig2.savefig('/home/dishuu/Desktop/point_plot_segmented.png')
+fig2.savefig('./Results/point_plot_segmented.png')
 v1 = pptk.viewer(c_2,rgb)
 
 
