@@ -4,7 +4,7 @@ from sklearn.cluster import KMeans
 import matplotlib.pyplot as plt
 from open3d import *
 
-data = read_point_cloud("/home/dishuu/Desktop/Point Cloud/milk+stereo/table_scene_mug_stereo_textured.pcd")
+data = read_point_cloud("./Dataset/table_scene_mug_stereo_textured_inliers.pcd")
 a = np.asarray(data.points)
 
 Sum_of_squared_distances = []
@@ -20,7 +20,7 @@ plt.ylabel('Sum_of_squared_distances')
 plt.title('Elbow Method For Optimal k')
 plt.show()
 fig =plt.figure()
-fig.savefig('/home/dishuu/Desktop/Point Cloud/milk+stereo/optimal_k_milk_stereo.png')
+fig.savefig('./Clusering/optimal_k_milk_stereo.png')
 
 
 

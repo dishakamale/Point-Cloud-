@@ -6,7 +6,7 @@ from mpl_toolkits.mplot3d import axes3d, Axes3D #<-- Note the capitalization!
 from scipy.cluster.vq import kmeans2, whiten
 
 
-data = read_point_cloud("/home/dishuu/Desktop/Point Cloud/python-clustering-exercises-master/table_scene_lms400.pcd")
+data = read_point_cloud("/home/dishuuuuu/Point-Cloud-/Dataset/table_scene_lms400_inliers.pcd")
 
 a = np.asarray(data.points)
 fig = plt.figure()
