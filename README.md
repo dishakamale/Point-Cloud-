@@ -8,7 +8,7 @@ The optimum value of number of clusters is predicted using the elbow method.('Op
 The segmenattion of table-mug cluster is given by 'Segmentation.py'.
 
 
-#Requirements : 
+# Requirements : 
 
 1. numpy = '1.15.4'
 2. pandas = '0.23.4'
@@ -16,3 +16,4 @@ The segmenattion of table-mug cluster is given by 'Segmentation.py'.
 4. matplotlib = '3.0.2'
 5. open3d = ''0.4.0.0'
 6. mplot3d 
+7. pcl = '1.7.2'
