@@ -27,22 +27,25 @@ These codes have been tested on **Ubuntu 16.04** and **python 3.5.2** and **ros 
 ## Installation :
 
 1. Create and source a virtual environment for python3
-'''
+```
  $ sudo apt install python3-virtualenv
  $ virtualenv -p python3 --no-site-packages <path to env>
  $ source <path>/bin/activate
-'''
+
+```
 
 2. Install the required packages and libraries. 
-'''
+```
  $ pip install numpy scipy pandas 
 
  $ sudo apt-get install python3-matplotlib
-'''
+
+```
 3. Open3d installation. 
-'''
+```
  $ pip install open3d-python
-'''
+
+```
 4. python-pcl installation. 
 
  [Instructions for installation](https://docs.google.com/document/d/1hDSsDuJrm9zsK83CwWAG3MFCBzwxO3FevBTzDMlx1qk/edit?usp=sharing)
