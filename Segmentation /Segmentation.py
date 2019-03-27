@@ -7,6 +7,8 @@ from mpl_toolkits.mplot3d import axes3d, Axes3D #<-- Note the capitalization!
 from scipy.cluster.vq import kmeans2, whiten
 import pptk 
 %matplotlib inline
+from numpy.random import rand
+
 
 
 
@@ -48,7 +50,7 @@ for i in range (1,460000) :
 fig1 = plt.figure()
 axc_1 = Axes3D(fig1)
 axc_1.scatter(c_1[:,0],c_1[:,1],c_1[:,2],c='yellow', alpha=0.33333)
-
+axc_1.text(c_1[:,0],c_1[:,1],c_1[:,2], '%s' % (str(cluster1)), size=20,zorder=1,color='blue')
 
 
 fig2 = plt.figure()
