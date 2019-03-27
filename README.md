@@ -31,7 +31,6 @@ These codes have been tested on **Ubuntu 16.04** and **python 3.5.2** and **ros 
  $ sudo apt install python3-virtualenv
  $ virtualenv -p python3 --no-site-packages <path to env>
  $ source <path>/bin/activate
-
 ```
 
 2. Install the required packages and libraries. 
@@ -39,12 +38,10 @@ These codes have been tested on **Ubuntu 16.04** and **python 3.5.2** and **ros 
  $ pip install numpy scipy pandas 
 
  $ sudo apt-get install python3-matplotlib
-
 ```
 3. Open3d installation. 
 ```
  $ pip install open3d-python
-
 ```
 4. python-pcl installation. 
 
